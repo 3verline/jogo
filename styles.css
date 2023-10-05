@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+}
+
+.game-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #ddd;
+}
+
+.left-trace, .right-trace {
+    width: 10px;
+    height: 80px;
+    background-color: #333;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-trace {
+    left: 10px;
+}
+
+.right-trace {
+    right: 10px;
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    background-color: #f00;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
